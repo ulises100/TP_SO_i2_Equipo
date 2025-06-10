@@ -2,3 +2,8 @@ GAMMA-
 Lucia Alvarez 
 IP: 181.229.68.42
 Hora: 02:20 p. m       
+
+ALFA-
+Ian Arias
+IP: 192.168.100.123
+HORA: 18:46
