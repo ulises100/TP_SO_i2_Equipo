@@ -12,9 +12,7 @@ Beta:Ulises Acevedo
 Gamma:Lucia Alvarez
 
 
-
 Beta:
 
 c-Si,si puede,unicamente tiene que clonar los archivos para tener todos al mismo estado del fork que ALFA
 d-No,no se pierde nada,solamente muestra los datos ingresados mas los nuevos actualizados,amenos que volutariamente borres todo lo que ya tenias antes.
- 343a008db9bc12f94b56ef2e552eae9ad74b875f
