@@ -1,0 +1,7 @@
+a-¿Cómo actualizo mi repositorio, al estado que esté el repo que hice FORK?
+b-¿Puede ALFA actualizar su FORK al estado del fork de GAMMA
+c-¿Puede GAMMA actualizar su FORK al estado del fork de ALFA?
+
+a- El repositorio se agrega como remoto, se agregan los cambios con upstream y hacer merge con la rama actual.
+b- Si puede actualizarlo al de GAMMA
+c- Si, puede actualizarlo al de ALFA
