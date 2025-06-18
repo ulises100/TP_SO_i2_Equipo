@@ -18,3 +18,72 @@ b- Si puede actualizarlo al de GAMMA
 Beta:
 c- Si, si puede,unicamente tiene que clonar los archivos para tener todos al mismo estado del fork que ALFA.
 d- No, no se pierde nada,solamente muestra los datos ingresados mas los nuevos actualizados,amenos que volutariamente borres todo lo que ya tenias antes.
+
+
+Alfa:
+
+e) Listado paso a paso de comandos necesarios para resolver este TP por orden de ejecución y alumnos:
+
+# Paso 1 – Ulises Acevedo (BETA)
+
+git init
+echo "# TP Sistemas Operativos - Equipo X" > README.md
+touch fork.txt
+git add README.md fork.txt
+git commit -m "BETA: crea repositorio inicial con README y fork.txt"
+git branch -M main
+git remote add origin https://github.com/ulises100/TP_SO_i2_Equipo.git
+git push -u origin main
+
+# Paso 2 – Lucia Alavarez (GAMMA)
+
+git clone https://github.com/LuciaAlvarez1/TP_SO_i2_Equipo.git
+cd TP_SO_i2_Equipo
+git add fork.txt
+git commit -m "GAMMA: agregó su nombre, IP y hora en fork.txt"
+git push origin main
+
+# Paso 3 – Ian Arias (ALFA)
+
+git clone https://github.com/ianarias27/TP_SO_i2_Equipo.git
+cd TP_SO_i2_Equipo
+git add fork.txt
+git commit -m "ALFA: agregó su nombre, IP y hora en fork.txt"
+git push origin main
+
+# Paso 4 – Ulises Acevedo (BETA)
+
+cd TP_SO_i2_Equipo
+echo "Dato agregado por BETA" > NuevoDato.txt
+git add NuevoDato.txt
+git commit -m "BETA: agregó NuevoDato.txt"
+git push origin main
+
+# Paso 5 – Lucia Alavarez (GAMMA)
+
+git remote add upstream https://github.com/ulises100/TP_SO_i2_Equipo.git
+git fetch upstream
+git merge upstream/main
+git push origin main
+
+# Paso 5 – Ian Arias (ALFA)
+
+git remote add upstream https://github.com/ulises100/TP_SO_i2_Equipo.git
+git fetch upstream
+git merge upstream/main
+git push origin main
+
+# Paso 6 – Ulises Acevedo (BETA) y Lucia Alavarez (GAMMA)
+
+touch respuesta_I2_EquipoX.txt
+git add respuesta_I2_EquipoX.txt
+git commit -m "Respuestas a-d por BETA y GAMMA"
+git push origin main
+
+# Paso 7 – Ian Arias (ALFA)
+
+git fetch upstream
+git merge upstream/main
+git add respuesta_I2_EquipoX.txt
+git commit -m "ALFA: agregó respuesta e) final al archivo"
+git push origin main
